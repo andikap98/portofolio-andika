@@ -837,17 +837,59 @@ main{
     background-color: var(--bgColor);
 }
 
-services .services-row .services-box .ser-info{
+#services .services-row .services-box .ser-info{
     color: var(--sideBGcolor);
     font-size: 20px;
     font-weight: 600;
 }
 
-services .services-row .services-box .ser-info h4 + p {
+#services .services-row .services-box .ser-info h4 + p {
     color: var(--textColor);
     font-size: 14px;
     font-weight: 500  ;
 }
 
+/* Mobile View */
+@media only screen and (max-width: 850px){
+    #services{
+        padding: 50px 15px;
+       
+    }
+
+    #services .services-row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+}
+@media only screen and (max-width: 550px){
+
+    #services .services-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}
 
 /* ============= Service Section End ======================  */
+/* ======================== Contact Section Start============ */
+
+#contact{
+
+    padding: 70px 30px;
+
+}
+#contact .contact-row{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+#contact .contact-row .contact-left{
+    flex-basis: 40%;
+    min-width: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    border-radius: 4px;
+    padding: 30px;
+}
+/* ======================== Contact Section End============ */

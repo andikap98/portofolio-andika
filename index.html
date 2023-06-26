@@ -32,11 +32,11 @@
 
         <nav>
             <ul>
-                <li><a href="" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
                 <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
-                <li><a href=""><i class="fa-solid fa-server"></i>Services</a></li>
-                <li><a href=""><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                <li><a href="#services"><i class="fa-solid fa-server"></i>Services</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
             </ul>
         </nav>
 
@@ -520,10 +520,24 @@
                             <p>Gresik, Jawa Timur, Indonesia</p>
                         </div>
                     </div>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31674.07193215866!2d112.54800163022365!3d-7.095950321354564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77fc483843d0a9%3A0xd353af190e986c53!2sBetoyokauman%2C%20Kec.%20Manyar%2C%20Kabupaten%20Gresik%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1687594050014!5m2!1sid!2sid" width="100%" height="250" style="border:4;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </div>
 
                 <!-- right-col -->
-                <div class="contact-right"></div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Masukan Nama">
+                        <input type="email" name="emai" id="email" placeholder="Masukan Email">
+                        <input type="text" name="subject" id="subject" placeholder="Masukan subject">
+                        <textarea name="msg" id="msg" rows="9" placeholder="Masukan Pesan"></textarea>
+                        <input type="submit" value="Kirim Pesan">
+
+                    </form>
+                </div>
             </div>
 
         </section>
